@@ -1,0 +1,10 @@
+@import "../styles/colors.module.scss";
+
+.pageWrapper {
+  align-items: center;
+  background: $primary-dark-700;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}

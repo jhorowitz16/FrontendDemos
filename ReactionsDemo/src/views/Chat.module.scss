@@ -1,0 +1,74 @@
+@import "../styles/colors.module.scss";
+
+.wrapper {
+  background: $primary-dark-700;
+  display: flex;
+  height: 100%;
+}
+
+.channels {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  max-height: 100%;
+  width: 220px;
+}
+
+.channelsWrapper {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.channelsContentFixed {
+  flex: 0 0 auto;
+}
+
+.logOutWrapper {
+  padding: 10px;
+}
+
+.logOutContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logOutUser {
+  margin-right: 5px;
+}
+
+.logOutButton {
+  background-color: transparent;
+  color: $status-red-500;
+  padding: 0;
+  text-decoration: underline;
+
+  &:hover {
+    color: $status-red-400;
+  }
+}
+
+.chat {
+  background: $primary-dark-600;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.chatWrapper {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.messageComposerWrapper {
+  flex: 0 0 auto;
+}
+
+.users {
+  flex: 0 0 auto;
+  max-height: 100%;
+  overflow: auto;
+  width: 150px;
+}

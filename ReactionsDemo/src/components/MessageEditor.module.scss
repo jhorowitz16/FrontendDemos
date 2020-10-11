@@ -1,0 +1,45 @@
+@import "../styles/colors.module.scss";
+
+.root {
+  margin-top: 6px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  flex: 1 1 auto;
+}
+
+.button {
+  background-color: $status-green-500;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  flex: 0 0 auto;
+
+  &:disabled {
+    background-color: $status-green-700;
+  }
+}
+
+.cancelText {
+  margin-top: 6px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.cancelButton {
+  background: transparent;
+  border: none;
+  color: $status-grey-500;
+  font-size: inherit;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

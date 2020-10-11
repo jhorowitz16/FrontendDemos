@@ -1,0 +1,33 @@
+@import "../styles/colors.module.scss";
+
+.wrapper {
+  padding: 10px;
+}
+
+.user {
+  align-items: center;
+  display: flex;
+  opacity: 0.5;
+}
+
+.userMe {
+  font-weight: bold;
+  opacity: 1;
+}
+
+.userOnline {
+  opacity: 1;
+}
+
+.statusIndicator {
+  background-color: $status-grey-500;
+  border-radius: 8px;
+  display: block;
+  height: 8px;
+  margin-right: 4px;
+  width: 8px;
+}
+
+.statusIndicatorOnline {
+  background-color: $status-green-500;
+}

@@ -1,0 +1,30 @@
+.image {
+  background: beige;
+  margin: 8px;
+  flex: 1 0 21%;
+}
+
+.image__content {
+  display: block;
+  margin-top: 16px;
+  position: relative;
+}
+
+.image__wrapper {
+  width: 100%;
+  height: 100px;
+  margin-top: 16px;
+  position: relative;
+}
+.image__wrapper--image,
+.image__wrapper--canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+canvas {
+  z-index: 10;
+}

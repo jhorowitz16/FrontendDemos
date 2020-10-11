@@ -1,0 +1,40 @@
+@import "../styles/colors.module.scss";
+
+.list {
+  list-style: none;
+  margin: 0 -10px;
+  padding: 0;
+}
+
+.listItem {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  color: $primary-dark-300;
+  display: block;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.listItemInteractive {
+  cursor: pointer;
+  transition: background-color 0.1s, color 0.1s;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover:not(.listItemActive) {
+    background-color: $primary-dark-600;
+    color: $white;
+  }
+}
+
+.listItemActive {
+  background-color: $brand-500;
+  color: $white;
+  font-weight: 700;
+}

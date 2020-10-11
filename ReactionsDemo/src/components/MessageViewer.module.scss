@@ -1,0 +1,66 @@
+@import "../styles/colors.module.scss";
+
+.wrapper {
+  padding: 10px;
+}
+
+.wrapperEmpty {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
+.message {
+  position: relative;
+  & + .message {
+    margin-top: 15px;
+  }
+  margin-bottom: 40px;
+}
+
+.metadata {
+  color: $primary-dark-400;
+  display: flex;
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+}
+
+.username {
+  color: $primary-dark-300;
+  flex: 0 0 auto;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.timestamp {
+  flex: 0 0 auto;
+}
+
+.editButton {
+  background-color: transparent;
+  border: 1px solid $brand-500;
+  border-radius: 2px;
+  color: $brand-500;
+  cursor: pointer;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.2s;
+  right: 0;
+}
+
+.message:hover .editButton {
+  opacity: 1;
+}
+
+// New Reactions CSS
+.reactions {
+  display: flex;
+}
+
+.reactions > button {
+  margin: 10px 20px 0;
+  background: transparent;
+  color: white;
+}

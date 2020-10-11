@@ -1,0 +1,35 @@
+@import "../styles/colors.module.scss";
+
+.root {
+  padding: 10px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  flex: 1 1 auto;
+}
+
+.button {
+  background-color: $status-green-500;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  flex: 0 0 auto;
+
+  &:disabled {
+    background-color: $status-green-700;
+  }
+}
+
+.characterLimit {
+  margin-bottom: 6px;
+  text-align: right;
+}
+
+.characterLimitExceeded {
+  color: $status-red-500;
+}

@@ -1,0 +1,10 @@
+.dashboard {
+  padding: 3vw;
+  text-align: center;
+}
+
+.dashboard__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}

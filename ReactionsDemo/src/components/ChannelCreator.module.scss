@@ -1,0 +1,28 @@
+@import "../styles/colors.module.scss";
+
+.wrapper {
+  padding: 10px;
+}
+
+.inputWrapper {
+  display: flex;
+}
+
+.input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  flex: 1 1 auto;
+  min-width: 60px;
+  padding: 6px 10px;
+}
+
+.button {
+  background-color: $status-grey-500;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  flex: 0 0 auto;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 0;
+  width: 40px;
+}

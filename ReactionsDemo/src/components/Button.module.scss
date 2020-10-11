@@ -1,0 +1,18 @@
+@import "../styles/colors.module.scss";
+
+.button {
+  appearance: none;
+  background-color: $brand-500;
+  border: 0;
+  border-radius: 4px;
+  color: $white;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 15px;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}

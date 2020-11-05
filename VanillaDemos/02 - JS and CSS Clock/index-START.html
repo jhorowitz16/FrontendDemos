@@ -62,12 +62,30 @@
       background: black;
       position: absolute;
       top: 50%;
+      transform-origin: right;
     }
 
   </style>
 
   <script>
 
+  function setDate() {
+    const hands = document.querySelectorAll(".hand");
+    console.log(Array.from(hands));
+    const now = new Date();
+    const seconds = now.getSeconds();
+    const minutes = now.getMinutes();
+    const hours = now.getHours();
+    console.log([seconds, minutes, hours]);
+    let degrees = [seconds, minutes, hours];
+
+    Array.from(hands).map((hand, index) => {
+      const rotate = `rotate(${(degrees[index])}deg)`
+      hand.style.transform = rotate;
+    });
+  }
+
+  setInterval(setDate, 1000);
 
   </script>
 </body>
